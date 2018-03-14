@@ -24,17 +24,10 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
     "timeoriginalestimate",
     "project",
     "description",
-    "customfield_10010",
     "fixVersions",
-    "customfield_10011",
-    "customfield_10012",
     "aggregatetimespent",
     "resolution",
-    "customfield_10013",
-    "customfield_10014",
     "security",
-    "customfield_10008",
-    "customfield_10009",
     "aggregatetimeestimate",
     "resolutiondate",
     "workratio",
@@ -46,12 +39,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
     "created",
     "reporter",
     "aggregateprogress",
-    "customfield_10000",
     "priority",
-    "customfield_10001",
-    "customfield_10002",
-    "customfield_10003",
-    "customfield_10004",
     "labels",
     "environment",
     "timeestimate",
@@ -83,30 +71,15 @@ public class Fields implements Serializable
     private Project project;
     @JsonProperty("description")
     private String description;
-    @JsonProperty("customfield_10010")
-    @Valid
-    private List<String> customfield10010 = null;
     @JsonProperty("fixVersions")
     @Valid
     private List<FixVersion> fixVersions = null;
-    @JsonProperty("customfield_10011")
-    private String customfield10011;
-    @JsonProperty("customfield_10012")
-    private Object customfield10012;
     @JsonProperty("aggregatetimespent")
     private Object aggregatetimespent;
     @JsonProperty("resolution")
     private Object resolution;
-    @JsonProperty("customfield_10013")
-    private Object customfield10013;
-    @JsonProperty("customfield_10014")
-    private Integer customfield10014;
     @JsonProperty("security")
     private Object security;
-    @JsonProperty("customfield_10008")
-    private Object customfield10008;
-    @JsonProperty("customfield_10009")
-    private Object customfield10009;
     @JsonProperty("aggregatetimeestimate")
     private Object aggregatetimeestimate;
     @JsonProperty("resolutiondate")
@@ -134,19 +107,9 @@ public class Fields implements Serializable
     @JsonProperty("aggregateprogress")
     @Valid
     private Aggregateprogress aggregateprogress;
-    @JsonProperty("customfield_10000")
-    private String customfield10000;
     @JsonProperty("priority")
     @Valid
     private Priority priority;
-    @JsonProperty("customfield_10001")
-    private Object customfield10001;
-    @JsonProperty("customfield_10002")
-    private Object customfield10002;
-    @JsonProperty("customfield_10003")
-    private Object customfield10003;
-    @JsonProperty("customfield_10004")
-    private Object customfield10004;
     @JsonProperty("labels")
     @Valid
     private List<Object> labels = null;
@@ -272,20 +235,6 @@ public class Fields implements Serializable
         return this;
     }
 
-    @JsonProperty("customfield_10010")
-    public List<String> getCustomfield10010() {
-        return customfield10010;
-    }
-
-    @JsonProperty("customfield_10010")
-    public void setCustomfield10010(List<String> customfield10010) {
-        this.customfield10010 = customfield10010;
-    }
-
-    public Fields withCustomfield10010(List<String> customfield10010) {
-        this.customfield10010 = customfield10010;
-        return this;
-    }
 
     @JsonProperty("fixVersions")
     public List<FixVersion> getFixVersions() {
@@ -302,35 +251,6 @@ public class Fields implements Serializable
         return this;
     }
 
-    @JsonProperty("customfield_10011")
-    public String getCustomfield10011() {
-        return customfield10011;
-    }
-
-    @JsonProperty("customfield_10011")
-    public void setCustomfield10011(String customfield10011) {
-        this.customfield10011 = customfield10011;
-    }
-
-    public Fields withCustomfield10011(String customfield10011) {
-        this.customfield10011 = customfield10011;
-        return this;
-    }
-
-    @JsonProperty("customfield_10012")
-    public Object getCustomfield10012() {
-        return customfield10012;
-    }
-
-    @JsonProperty("customfield_10012")
-    public void setCustomfield10012(Object customfield10012) {
-        this.customfield10012 = customfield10012;
-    }
-
-    public Fields withCustomfield10012(Object customfield10012) {
-        this.customfield10012 = customfield10012;
-        return this;
-    }
 
     @JsonProperty("aggregatetimespent")
     public Object getAggregatetimespent() {
@@ -362,35 +282,6 @@ public class Fields implements Serializable
         return this;
     }
 
-    @JsonProperty("customfield_10013")
-    public Object getCustomfield10013() {
-        return customfield10013;
-    }
-
-    @JsonProperty("customfield_10013")
-    public void setCustomfield10013(Object customfield10013) {
-        this.customfield10013 = customfield10013;
-    }
-
-    public Fields withCustomfield10013(Object customfield10013) {
-        this.customfield10013 = customfield10013;
-        return this;
-    }
-
-    @JsonProperty("customfield_10014")
-    public Integer getCustomfield10014() {
-        return customfield10014;
-    }
-
-    @JsonProperty("customfield_10014")
-    public void setCustomfield10014(Integer customfield10014) {
-        this.customfield10014 = customfield10014;
-    }
-
-    public Fields withCustomfield10014(Integer customfield10014) {
-        this.customfield10014 = customfield10014;
-        return this;
-    }
 
     @JsonProperty("security")
     public Object getSecurity() {
@@ -404,36 +295,6 @@ public class Fields implements Serializable
 
     public Fields withSecurity(Object security) {
         this.security = security;
-        return this;
-    }
-
-    @JsonProperty("customfield_10008")
-    public Object getCustomfield10008() {
-        return customfield10008;
-    }
-
-    @JsonProperty("customfield_10008")
-    public void setCustomfield10008(Object customfield10008) {
-        this.customfield10008 = customfield10008;
-    }
-
-    public Fields withCustomfield10008(Object customfield10008) {
-        this.customfield10008 = customfield10008;
-        return this;
-    }
-
-    @JsonProperty("customfield_10009")
-    public Object getCustomfield10009() {
-        return customfield10009;
-    }
-
-    @JsonProperty("customfield_10009")
-    public void setCustomfield10009(Object customfield10009) {
-        this.customfield10009 = customfield10009;
-    }
-
-    public Fields withCustomfield10009(Object customfield10009) {
-        this.customfield10009 = customfield10009;
         return this;
     }
 
@@ -602,21 +463,6 @@ public class Fields implements Serializable
         return this;
     }
 
-    @JsonProperty("customfield_10000")
-    public String getCustomfield10000() {
-        return customfield10000;
-    }
-
-    @JsonProperty("customfield_10000")
-    public void setCustomfield10000(String customfield10000) {
-        this.customfield10000 = customfield10000;
-    }
-
-    public Fields withCustomfield10000(String customfield10000) {
-        this.customfield10000 = customfield10000;
-        return this;
-    }
-
     @JsonProperty("priority")
     public Priority getPriority() {
         return priority;
@@ -632,65 +478,6 @@ public class Fields implements Serializable
         return this;
     }
 
-    @JsonProperty("customfield_10001")
-    public Object getCustomfield10001() {
-        return customfield10001;
-    }
-
-    @JsonProperty("customfield_10001")
-    public void setCustomfield10001(Object customfield10001) {
-        this.customfield10001 = customfield10001;
-    }
-
-    public Fields withCustomfield10001(Object customfield10001) {
-        this.customfield10001 = customfield10001;
-        return this;
-    }
-
-    @JsonProperty("customfield_10002")
-    public Object getCustomfield10002() {
-        return customfield10002;
-    }
-
-    @JsonProperty("customfield_10002")
-    public void setCustomfield10002(Object customfield10002) {
-        this.customfield10002 = customfield10002;
-    }
-
-    public Fields withCustomfield10002(Object customfield10002) {
-        this.customfield10002 = customfield10002;
-        return this;
-    }
-
-    @JsonProperty("customfield_10003")
-    public Object getCustomfield10003() {
-        return customfield10003;
-    }
-
-    @JsonProperty("customfield_10003")
-    public void setCustomfield10003(Object customfield10003) {
-        this.customfield10003 = customfield10003;
-    }
-
-    public Fields withCustomfield10003(Object customfield10003) {
-        this.customfield10003 = customfield10003;
-        return this;
-    }
-
-    @JsonProperty("customfield_10004")
-    public Object getCustomfield10004() {
-        return customfield10004;
-    }
-
-    @JsonProperty("customfield_10004")
-    public void setCustomfield10004(Object customfield10004) {
-        this.customfield10004 = customfield10004;
-    }
-
-    public Fields withCustomfield10004(Object customfield10004) {
-        this.customfield10004 = customfield10004;
-        return this;
-    }
 
     @JsonProperty("labels")
     public List<Object> getLabels() {
@@ -889,24 +676,130 @@ public class Fields implements Serializable
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("issuetype", issuetype).append("components", components).append("timespent", timespent).append("timeoriginalestimate", timeoriginalestimate).append("project", project).append("description", description).append("customfield10010", customfield10010).append("fixVersions", fixVersions).append("customfield10011", customfield10011).append("customfield10012", customfield10012).append("aggregatetimespent", aggregatetimespent).append("resolution", resolution).append("customfield10013", customfield10013).append("customfield10014", customfield10014).append("security", security).append("customfield10008", customfield10008).append("customfield10009", customfield10009).append("aggregatetimeestimate", aggregatetimeestimate).append("resolutiondate", resolutiondate).append("workratio", workratio).append("summary", summary).append("lastViewed", lastViewed).append("watches", watches).append("creator", creator).append("subtasks", subtasks).append("created", created).append("reporter", reporter).append("aggregateprogress", aggregateprogress).append("customfield10000", customfield10000).append("priority", priority).append("customfield10001", customfield10001).append("customfield10002", customfield10002).append("customfield10003", customfield10003).append("customfield10004", customfield10004).append("labels", labels).append("environment", environment).append("timeestimate", timeestimate).append("aggregatetimeoriginalestimate", aggregatetimeoriginalestimate).append("versions", versions).append("duedate", duedate).append("progress", progress).append("issuelinks", issuelinks).append("votes", votes).append("assignee", assignee).append("updated", updated).append("status", status).append("additionalProperties", additionalProperties).toString();
+        return new ToStringBuilder(this)
+                .append("issuetype", issuetype)
+                .append("components", components)
+                .append("timespent", timespent)
+                .append("timeoriginalestimate", timeoriginalestimate)
+                .append("project", project)
+                .append("description", description)
+                .append("fixVersions", fixVersions)
+                .append("aggregatetimespent", aggregatetimespent)
+                .append("resolution", resolution)
+                .append("security", security)
+                .append("aggregatetimeestimate", aggregatetimeestimate)
+                .append("resolutiondate", resolutiondate)
+                .append("workratio", workratio)
+                .append("summary", summary)
+                .append("lastViewed", lastViewed)
+                .append("watches", watches)
+                .append("creator", creator)
+                .append("subtasks", subtasks)
+                .append("created", created)
+                .append("reporter", reporter)
+                .append("aggregateprogress", aggregateprogress)
+                .append("priority", priority)
+                .append("labels", labels)
+                .append("environment", environment)
+                .append("timeestimate", timeestimate)
+                .append("aggregatetimeoriginalestimate", aggregatetimeoriginalestimate)
+                .append("versions", versions)
+                .append("duedate", duedate)
+                .append("progress", progress)
+                .append("issuelinks", issuelinks)
+                .append("votes", votes)
+                .append("assignee", assignee)
+                .append("updated", updated)
+                .append("status", status)
+                .append("additionalProperties", additionalProperties)
+                .toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Fields fields = (Fields) o;
+
+        return new EqualsBuilder()
+                .append(issuetype, fields.issuetype)
+                .append(components, fields.components)
+                .append(timespent, fields.timespent)
+                .append(timeoriginalestimate, fields.timeoriginalestimate)
+                .append(project, fields.project)
+                .append(description, fields.description)
+                .append(fixVersions, fields.fixVersions)
+                .append(aggregatetimespent, fields.aggregatetimespent)
+                .append(resolution, fields.resolution)
+                .append(security, fields.security)
+                .append(aggregatetimeestimate, fields.aggregatetimeestimate)
+                .append(resolutiondate, fields.resolutiondate)
+                .append(workratio, fields.workratio)
+                .append(summary, fields.summary)
+                .append(lastViewed, fields.lastViewed)
+                .append(watches, fields.watches)
+                .append(creator, fields.creator)
+                .append(subtasks, fields.subtasks)
+                .append(created, fields.created)
+                .append(reporter, fields.reporter)
+                .append(aggregateprogress, fields.aggregateprogress)
+                .append(priority, fields.priority)
+                .append(labels, fields.labels)
+                .append(environment, fields.environment)
+                .append(timeestimate, fields.timeestimate)
+                .append(aggregatetimeoriginalestimate, fields.aggregatetimeoriginalestimate)
+                .append(versions, fields.versions)
+                .append(duedate, fields.duedate)
+                .append(progress, fields.progress)
+                .append(issuelinks, fields.issuelinks)
+                .append(votes, fields.votes)
+                .append(assignee, fields.assignee)
+                .append(updated, fields.updated)
+                .append(status, fields.status)
+                .append(additionalProperties, fields.additionalProperties)
+                .isEquals();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(progress).append(summary).append(customfield10012).append(issuetype).append(customfield10011).append(customfield10014).append(customfield10013).append(votes).append(customfield10010).append(security).append(resolution).append(fixVersions).append(resolutiondate).append(timespent).append(creator).append(reporter).append(aggregatetimeoriginalestimate).append(updated).append(created).append(priority).append(description).append(duedate).append(issuelinks).append(watches).append(customfield10003).append(customfield10002).append(customfield10001).append(customfield10000).append(subtasks).append(status).append(labels).append(customfield10004).append(assignee).append(workratio).append(aggregatetimeestimate).append(versions).append(project).append(environment).append(additionalProperties).append(timeestimate).append(aggregateprogress).append(lastViewed).append(customfield10008).append(customfield10009).append(components).append(timeoriginalestimate).append(aggregatetimespent).toHashCode();
+        return new HashCodeBuilder(17, 37)
+                .append(issuetype)
+                .append(components)
+                .append(timespent)
+                .append(timeoriginalestimate)
+                .append(project)
+                .append(description)
+                .append(fixVersions)
+                .append(aggregatetimespent)
+                .append(resolution)
+                .append(security)
+                .append(aggregatetimeestimate)
+                .append(resolutiondate)
+                .append(workratio)
+                .append(summary)
+                .append(lastViewed)
+                .append(watches)
+                .append(creator)
+                .append(subtasks)
+                .append(created)
+                .append(reporter)
+                .append(aggregateprogress)
+                .append(priority)
+                .append(labels)
+                .append(environment)
+                .append(timeestimate)
+                .append(aggregatetimeoriginalestimate)
+                .append(versions)
+                .append(duedate)
+                .append(progress)
+                .append(issuelinks)
+                .append(votes)
+                .append(assignee)
+                .append(updated)
+                .append(status)
+                .append(additionalProperties)
+                .toHashCode();
     }
-
-    @Override
-    public boolean equals(Object other) {
-        if (other == this) {
-            return true;
-        }
-        if ((other instanceof Fields) == false) {
-            return false;
-        }
-        Fields rhs = ((Fields) other);
-        return new EqualsBuilder().append(progress, rhs.progress).append(summary, rhs.summary).append(customfield10012, rhs.customfield10012).append(issuetype, rhs.issuetype).append(customfield10011, rhs.customfield10011).append(customfield10014, rhs.customfield10014).append(customfield10013, rhs.customfield10013).append(votes, rhs.votes).append(customfield10010, rhs.customfield10010).append(security, rhs.security).append(resolution, rhs.resolution).append(fixVersions, rhs.fixVersions).append(resolutiondate, rhs.resolutiondate).append(timespent, rhs.timespent).append(creator, rhs.creator).append(reporter, rhs.reporter).append(aggregatetimeoriginalestimate, rhs.aggregatetimeoriginalestimate).append(updated, rhs.updated).append(created, rhs.created).append(priority, rhs.priority).append(description, rhs.description).append(duedate, rhs.duedate).append(issuelinks, rhs.issuelinks).append(watches, rhs.watches).append(customfield10003, rhs.customfield10003).append(customfield10002, rhs.customfield10002).append(customfield10001, rhs.customfield10001).append(customfield10000, rhs.customfield10000).append(subtasks, rhs.subtasks).append(status, rhs.status).append(labels, rhs.labels).append(customfield10004, rhs.customfield10004).append(assignee, rhs.assignee).append(workratio, rhs.workratio).append(aggregatetimeestimate, rhs.aggregatetimeestimate).append(versions, rhs.versions).append(project, rhs.project).append(environment, rhs.environment).append(additionalProperties, rhs.additionalProperties).append(timeestimate, rhs.timeestimate).append(aggregateprogress, rhs.aggregateprogress).append(lastViewed, rhs.lastViewed).append(customfield10008, rhs.customfield10008).append(customfield10009, rhs.customfield10009).append(components, rhs.components).append(timeoriginalestimate, rhs.timeoriginalestimate).append(aggregatetimespent, rhs.aggregatetimespent).isEquals();
-    }
-
 }
